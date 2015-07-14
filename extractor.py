@@ -17,5 +17,3 @@ def get_data():
     soup = BeautifulSoup(html)
     return soup.prettify()
 
-def foo():
-    print("foo")
