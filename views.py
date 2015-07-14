@@ -1,8 +1,7 @@
-#!/usr/bin/env python2.7
 from django.shortcuts import render
 from django.shortcuts import redirect
 from django.http import HttpResponse
-from . import extractor
+from django.contrib import messages
 
 def home(request):
     template = 'index.html'
@@ -14,6 +13,6 @@ def search(request):
         coming = request.POST.get("Aday")
         destination = request.POST.get("selected")
         message = going + coming + destination
-        return HttpResponse(extractor.foo())
+        return HttpResponse(message)
     else:
         return redirect('/')
