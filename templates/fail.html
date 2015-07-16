@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>GoWhere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "{% static "css/bootstrap.min.css" %}">
+        <link rel="stylesheet" href= "{% static "css/bootstrap-theme.min.css" %}">
+        <link rel="stylesheet" href= "{% static "css/searched.css" %}">
+        <script src= "{% static "js/jquery-1.11.3.min.js" %}"></script>
+        <script src= "{% static "js/Verify.js" %}"></script>
+        <script src= "{% static "js/app.js" %}"></script>
+        <script src= "{% static "js/init-app.js" %}"></script>ß
+        <script src= "{% static "js/bootstrap.min.js" %}"></script>
+</head>
+
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}Important: {% endif %}
+        {{ message }}
+    </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 1</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 2</p></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 3</p></div>
+            <div class="clearfix visible-md-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 4</p></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="clearfix visible-lg-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 5</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 6</p></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="clearfix visible-md-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 7</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 8</p></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="clearfix visible-lg-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 9</p></div>
+            <div class="clearfix visible-md-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 10</p></div>
+            <div class="clearfix visible-sm-block"></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 11</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><p>Box 12</p></div>
+        </div>
+    </div>
+</body>
+</html>

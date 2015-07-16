@@ -1,0 +1,22 @@
+html{
+    background:url('../images/hd-island-wallpapers-beach-backgrounds-hd-backgrounds-30029.jpg') no-repeat center center;
+
+    /* Ensure the html element always takes up the full height of the browser window */
+    min-height:100%;
+
+    /* The Magic */
+    background-size:cover;
+}
+
+body{
+    /* Workaround for some mobile browsers */
+    min-height:100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+p{
+    padding: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: #f2f2f2;
+}

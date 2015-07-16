@@ -12,6 +12,9 @@ def search(request):
         going = request.POST.get("Dday")
         coming = request.POST.get("Aday")
         destination = request.POST.get("selected")
+        if not destination or coming < going:
+            messages.error(request,"Trying to be funny eh!")
+            return render(request, "fail.html")
         message = going + coming + destination
         return HttpResponse(message)
     else:
