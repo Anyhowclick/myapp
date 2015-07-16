@@ -24,7 +24,8 @@ html {
 }
 
 #dest_font{
-    font-weight: 10em;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700px;
 }
 
 #ajax{
@@ -55,6 +56,7 @@ html {
 body{
     text-align:center;
     overflow: hidden;
+    background-color:rgba(0,0,0,0)
 
 }
 
@@ -78,6 +80,8 @@ body{
 }
 
 #selection{
+    font-family: "Cabin Condensed";
+    font-weight: 500px;
     position: relative;
     z-index: 5000;
 }
@@ -90,5 +94,4 @@ body{
 #social{
     top:1.5em;
 }
-
 
