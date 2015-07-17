@@ -31,14 +31,48 @@ def get_data(coming,going,destination):
 ### END OF GETTING DATA ###
 
 ### Data manipulation ###
+    final = []
     file = open("flight data.json","r")
     flights = json.load(file)
+    support = flights['trips']['data']
+    carriers = support['carrier'] #<<< carrier details Eg. Jetstar, Air India
+    aircraft = support['aircraft'] #<<< Eg. Airbus 320
+    cities = support['city'] #<<< Eg. BKK = bangkok
+    airports = support['airport']
     flight_details = flights['trips']['tripOption']
     for flight in flight_details:
         total_price = flight['saleTotal']
-        fare = flight['pricing'][0]['saleFareTotal']
-        tax = flight['pricing'][0]['saleTaxTotal']
-        print(flight['slice'][0]['segment'])
+        prices = flight['pricing']
+        for price in prices:
+            holder = {}
+            fare = price['saleFareTotal']
+            tax = price['saleTaxTotal']
+            holder = {"fare" : fare, "tax" : tax}
+        parts = flight['slice'][0]
+        legs = parts['segment']
+        #duration = parts['duration']
+        flight_info = {}
+        total_flight_info = []
+        for leg in range(0,len(legs)):
+            carrier = legs[leg]['flight']['carrier']
+            number = legs[leg]['flight']['number']
+            bookingCode = legs[leg]['bookingCode']
+            stuff = legs[leg]['leg'][0]
+            arrival = stuff['arrivalTime']
+            departure = stuff['departureTime']
+            destination = stuff['destination']
+            origin = stuff['origin']
+            flight_info[leg]={}
+            flight_info[leg]['bookingCode']=bookingCode
+            flight_info[leg]['carrier']=carrier
+            flight_info[leg]['carrier_num']=number
+            flight_info[leg]['arrival']=arrival
+            flight_info[leg]['departure']=departure
+            flight_info[leg]['origin']=origin
+            flight_info[leg]['destination']=destination
+            total_flight_info.append(flight_info)
+            final.append((total_price,holder,total_flight_info))
+    return final
 
-get_data("SIN", "BKK", "2015-01-19")
+print(get_data("2015-07-25", "2015-07-26","BKK"))
     
