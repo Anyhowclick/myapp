@@ -20,20 +20,19 @@ def get_data(coming,going,destination):
         "passengers": {
           "adultCount": 1
         },
-        "solutions": 30,
+        "solutions": 25,
         "refundable": False
       }
     }
     #response = requests.post(url, data=json.dumps(params), headers=headers)
-    #data = response.json()
-    #print(data)
+    #flights = response.json()
 
 ### END OF GETTING DATA ###
 
 ### Data manipulation ###
     final = []
-    file = open("flight data.json","r")
-    flights = json.load(file)
+    #file = open("flight data.json","r")
+    #flights = json.load(file)
     support = flights['trips']['data']
     carriers = support['carrier'] #<<< carrier details Eg. Jetstar, Air India
     aircraft = support['aircraft'] #<<< Eg. Airbus 320
