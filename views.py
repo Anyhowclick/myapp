@@ -3,6 +3,7 @@ from django.shortcuts import redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 import datetime
+from .extractor import temp_get_data, get_data ### DELETE TEMP ###
 
 def home(request):
     template = 'index.html'
@@ -20,7 +21,12 @@ def search(request):
         elif today > going:
             messages.error(request,"This isn't a time machine! Check the dates!")
             return HttpResponseRedirect('/')
-        message = going + coming + destination
-        return render(request, "search.html")
+        message = temp_get_data() ### DELETE TEMP ###
+        #message = get_data(going, coming, destination)
+        if message == "Ran out of quota!":
+            messages.error(request,"Sorry, daily search quota of 50 has been reached, try again tomorrow!")
+            return HttpResponseRedirect('/')
+        else:
+            return render(request, 'search.html', { 'data': message })
     else:
         return redirect('/')

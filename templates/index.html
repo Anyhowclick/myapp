@@ -39,10 +39,8 @@
         ; min-zoom: 100% ; }
     </style>
     <script src= "{% static "js/jquery-1.11.3.min.js" %}"></script>
-    <script src= "{% static "js/Verify.js" %}"></script>
     <script src= "{% static "js/app.js" %}"></script>
     <script src= "{% static "js/init-app.js" %}"></script>
-    <script src= "{% static "js/validation.js" %}"></script>
     <script src= "{% static "js/bootstrap.min.js" %}"></script>
 
 
@@ -129,7 +127,7 @@
         </div>
     {% endif %}
 
-    <form onsubmit="return validateForm()" method="POST" action = /search/> {% csrf_token %}
+    <form method="POST" action = /search/> {% csrf_token %}
         <div id="box"></div>
 
             <div id="input">
@@ -143,7 +141,7 @@
             <option value=""></option>
             <option value="BKK">Bangkok, Thailand (BKK-Suvarnabhumi Intl.)</option>
             <option value="DMK">Bangkok, Thailand (DMK-Don Mueang Intl.)</option>
-            <option value="KBV">"Krabi, Thailand (KBV-Krabi Intl.)",</option>
+            <option value="KBV">Krabi, Thailand (KBV-Krabi Intl.)</option>
             <option value="CNX">Chiang Mai, Thailand (CNX-Chiang Mai Intl.)</option>
             <option value="HDY">Hat Yai, Thailand (HDY-Hat Yai Intl.)</option>
             <option value="HKT">Phuket, Thailand (HKT-Phuket Intl.)</option>
