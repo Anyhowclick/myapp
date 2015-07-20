@@ -1,13 +1,201 @@
-html{
-    background: url('../images/Background_Wallpaper_Tropical_Island_Beach_Hammock_1-1024x768.jpg') no-repeat center center fixed;
-    min-height:100%;
-    background-size:cover;
-}
-
 body{
     /* Workaround for some mobile browsers */
     min-height:100%;
+    background: url('../images/relaxing_evening_beach-1577034.jpg') no-repeat center center fixed;
     background-color: rgba(0, 0, 0, 0.3);
+    background-size:cover;
+}
+
+body.BKK{
+    background-image: url('http://www.abay.vn/Images/upload/bangkok.jpeg');
+}
+
+body.DMK{
+    background-image: url('http://www.abay.vn/Images/upload/bangkok.jpeg');
+}
+
+body.KBV{
+    background-image: url('http://hype.my/wp-content/uploads/2015/06/Malaysia-Airlines-Krabi.jpg');
+}
+
+body.CNX{
+    background-image: url('http://archivusdesigns.net/iagg/main/wp-content/uploads/2014/05/CM-pic2.jpg');
+}
+
+body.HDY{
+    background-image: url('http://paradiseintheworld.com/wp-content/uploads/2012/04/hat-yai-thailand.jpg');
+}
+
+body.HKT{
+    background-image: url('http://cdnstatic-2.mydestination.com/library/images/610175_1680_948.jpg');
+}
+
+body.CEI{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/08/Wat_Rong_Khun_-_Chiang_Rai.jpg');
+}
+
+body.UTP{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/db/B-52D_approaching_U-Tapao_1972.jpg');
+}
+
+body.URT{
+    background-image: url('http://w-koh-samui-residences-thailand.marquetteturner.com/files/2009/11/Resi-Exterior-01-01.jpg');
+}
+
+body.UTH{
+    background-image: url('http://ngjyra.com/wp-content/uploads/2015/04/Liqeni-i-zambakeve2.jpg');
+}
+
+body.HAN{
+    background-image: url('https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-ash3/53599_4086840414779_1501845134_o.jpg');
+}
+
+body.SGN{
+    background-image: url('https://triip.imgix.net/triips/images/5617/6859/6819982ae4be11e4af53be7492457983_5760x3840.jpg');
+}
+
+body.DAD{
+    background-image: url('http://huongviettravel.com/images/tours/Da%20Nang5.jpg');
+}
+
+body.HUI{
+    background-image: url('https://mindymorris.files.wordpress.com/2013/02/hue-blog-2.jpg');
+}
+
+body.CXR{
+    background-image: url('https://www.go-indochine.com/uploads/tour/2011-10-03.09.32.12-nhatrang3.jpg');
+}
+
+body.BWN{
+    background-image: url('https://pomacious.files.wordpress.com/2012/12/dsc_0013.jpg');
+}
+
+body.PNH{
+    background-image: url('https://sokhahotels.com/phnompenh/phnompenh-hotel/img/high-resolution-downloads/Hotel%20View/Phnom%20Penh%20City%20View.jpg');
+}
+
+body.REP{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f5/Buddhist_monks_in_front_of_the_Angkor_Wat.jpg');
+}
+
+body.UPG{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Fort_Rotterdam,_Makassar,_Indonesia_-_20100227-01.jpg');
+}
+
+body.MDC{
+    background-image: url('https://cheaphotelsme.files.wordpress.com/2013/02/a-volcanic-island-in-manado-indonesia.jpg');
+}
+
+body.LOP{
+    background-image: url('http://www.yuliahtravel.com/wp-content/uploads/2014/10/Lombok-Island-2.jpg');
+}
+
+body.KNO{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/79/Great_Mosque_Medan_Indonesia.JPG');
+}
+
+body.PDG{
+    background-image: url('http://www.globeimages.net/data/media/92/padang_indonesia_beach.jpg');
+}
+
+body.PLM{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0e/Ampera_Bridge_at_Late_Afternoon,_Palembang.jpg');
+}
+
+body.PKU{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Masjid_Agung_Pekanbaru.jpg');
+}
+
+body.SRG{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Becak_Tugu_Muda_Semarang_Central_Java.jpg');
+}
+
+body.SOC{
+    background-image: url('http://surakarta.go.id/sites/default/files/field/image/Keraton_Surakarta%20new.JPG');
+}
+
+body.JOG{
+    background-image: url('https://theprofessorandtheprivateeye.files.wordpress.com/2013/02/yogyakarta-025.jpg');
+}
+
+body.CGK{
+    background-image: url('http://www.layoverguide.com/wp-content/uploads/2010/10/Jakarta-skyline-Indonesia.jpg');
+}
+
+body.DPS{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c9/Denpasar,_Bali.jpg');
+}
+
+body.BDO{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Tea_plantation_in_Ciwidey,_Bandung_2014-08-21.jpg');
+}
+
+body.BPN{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3d/Balikpapan_4.jpg');
+}
+
+body.LPQ{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9f/Luang_Prabang_Museum.jpg');
+}
+
+body.VTE{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/Patuxai,_Vientiane,_Laos_(5248396160).jpg');
+}
+
+body.JHB{
+    background-image: url('http://www.hometeamns.sg/PublishingImages/pages/Thistle-Johor-Bahru/Thistle_Johor_Bahru_Oasis_Restaurant.png');
+}
+
+body.BKI{
+    background-image: url('http://notesofnomads.com/wp-content/uploads/kota-kinabalu-night-markets.jpg');
+}
+
+body.KUL{
+    background-image: url(http://hype.my/wp-content/uploads/2015/06/Malaysia-Airlines-Krabi.jpg''http://www.hdwallpaper.nu/wp-content/uploads/2015/04/283253-kuala-lumpur.jpg');
+}
+
+body.KCH{
+    background-image: url('https://gavsmithblog.files.wordpress.com/2013/09/kuching-073.jpg');
+}
+
+body.LGK{
+    background-image: url('http://www.globetrottingcouple.com/wp-content/uploads/2013/05/langkawi.jpg');
+}
+
+body.PEN{
+    background-image: url('http://4.bp.blogspot.com/-w-r7Xs4SUGo/UbR2NhlXfxI/AAAAAAAAKBw/qnH2uwie1Iw/s1600/DSCN8192.JPG');
+}
+
+body.MDL{
+    background-image: url('http://www.thewanderlustscout.com/wp-content/uploads/2015/01/travel-blog-mandalay4.jpg');
+}
+
+body.RGN{
+    background-image: url('http://thehungrysuitcase.com/wp-content/uploads/2013/05/IMG_3818-e1368979280550.jpg');
+}
+
+body.NYT{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2d/Uppatasanti_Pagoda-01.jpg');
+}
+
+body.ZAM{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b2/Paseo_del_Mar-_Zamboanga_City.JPG');
+}
+
+body.CEB{
+    background-image: url('http://www.globalreefroamers.com/wp-content/uploads/2014/06/Panorama-Cebu-Island.jpg');
+}
+
+body.DVO{
+    background-image: url('http://angelhack.com/wp-content/uploads/2015/02/davao.jpg');
+}
+
+body.MNL{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c7/MG_8236_(Cathedral-Basilica_of_the_Immaculate_Conception_and_informally_as_Manila_Cathedral).jpg');
+}
+
+body.ILO{
+    background-image: url('https://drscdn.500px.org/photo/37494218/m%3D2048/7ea9de7984ef48049e6ffb8216fdb53b');
 }
 
 p{
@@ -16,4 +204,20 @@ p{
     font-weight: bold;
     text-align: center;
     background: #f2f2f2;
+}
+
+.rate {
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-weight: 400;
+    vertical-align: baseline;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#rate {
+    color: orangered;
+    font-weight: 600;
+    font-size: 150%;
 }

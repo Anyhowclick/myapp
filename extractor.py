@@ -1,6 +1,28 @@
 import json
 import requests
 
+money = {"BKK":"THB", "DMK":"THB", "KBV":"THB",
+         "CNX":"THB", "HDY":"THB", "HKT":"THB",
+         "CEI":"THB", "UTP":"THB", "URT":"THB",
+         "UTH":"THB", "BWN":"BND"}
+
+for key in ["HAN", "SGN", "DAD", "HUI", "CXR"]:
+    money[key] = "VND"
+for key in ["PNH", "REP"]:
+    money[key] = "KHR"
+for key in ["UPG", "MDC", "LOP", "KNO", "PDG", "PLM", "PKU", "SRG", "SOC", "JOG","CGK", "DPS", "BDO", "BPN"]:
+    money[key] = "IDR"
+for key in ["LPQ", "VTE"]:
+    money[key] = "LAK"
+for key in ["JHB", "BKI", "KUL", "KCH", "LGK", "PEN"]:
+    money[key] = "MYR"
+for key in ["MDL", "RGN", "NYT"]:
+    money[key] = "MMK"
+for key in ["ZAM", "CEB", "DVO", "MNL", "ILO"]:
+    money[key] = "PHP"
+
+def currency(destination):
+    return money[destination]
 
 ### GETTING THE DATA ###
 
