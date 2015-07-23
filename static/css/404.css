@@ -1,0 +1,110 @@
+html {
+    background: url("../images/Mac Island Apple Beach Travel Background943.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    text-align:center;
+    overflow: hidden;
+    background-color:rgba(0,0,0,0);
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.box {
+    background-color: azure;
+    height:20em;
+    height:18vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    border:none;
+    opacity: 0.8;
+    padding: 0.5em;
+}
+
+#xs {
+    margin-top: 1%;
+    font-family: "Yanone+Kaffeesatz", "Cabin Condensed";
+    font-size: 10px;
+    font-size: 5vw;
+    line-height: normal;
+}
+
+#sm {
+    margin-top: 1.5%;
+    font-family: "Yanone+Kaffeesatz", "Cabin Condensed";
+    font-size: 10px;
+    font-size: 5vw;
+    line-height: normal;
+}
+
+#md {
+    margin-top: 2%;
+    font-family: "Yanone+Kaffeesatz", "Cabin Condensed";
+    font-size: 10px;
+    font-size: 5vw;
+    line-height: normal;
+}
+
+#lg {
+    margin-top: 2.5%;
+    font-family: "Yanone+Kaffeesatz", "Cabin Condensed";
+    font-size: 8px;
+    font-size: 5vw;
+    line-height: normal;
+}
+
+.redirectbox {
+    background-color: #FF1919;
+    height:15em;
+    height:15vw;
+    width: 100%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    border:none;
+    opacity: 0.85;
+    padding: 0.5em;
+}
+
+#boxxs {
+    height:21em;
+    height:21vw;
+    width: 70%;
+}
+
+#boxsm {
+    height:15em;
+    height:15vw;
+    width: 70%;
+}
+
+#boxmd {
+    height:17em;
+    height:17vw;
+    width: 80%;
+}
+
+#boxlg {
+    height:8em;
+    height:8vw;
+    width: 100%;
+}
+
+#redirectlg {
+    margin-top: 1%;
+    font-family: "Yanone+Kaffeesatz", "Cabin Condensed";
+    font-size: 10px;
+    font-size: 3.6vw;
+    line-height: normal;
+}
+
+

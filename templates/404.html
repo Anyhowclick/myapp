@@ -1,0 +1,52 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <script>
+    function redirect(){
+       window.location.href = "/";
+    }
+
+    setTimeout(redirect, 8000); //2000 is equivalent to 2 seconds
+    </script>
+    <link rel="stylesheet" href= "{% static "css/bootstrap.min.css" %}">
+    <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:500,600,700|Pacifico|Dancing+Script:400,700|Playball|Yanone+Kaffeesatz:400,200,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href= "{% static "css/404.css" %}">
+<head>
+    <a href="/"><img src= "{% static "images/logov2.png" %}"></a>
+</head>
+<body>
+        <div class="row">
+            <div class= "col-lg-12">
+                <div class="visible-xs box vcenter">
+            <h1 id="xs">The page you are looking for does not exist. <br>Just like your love life.</h1>
+                </div>
+                <div class="visible-sm box vcenter">
+            <h1 id="sm">The page you are looking for does not exist. <br>Just like your love life.</h1>
+                </div>
+                <div class="visible-md box vcenter">
+            <h1 id="md">The page you are looking for does not exist. <br>Just like your love life.</h1>
+                </div>
+                <div class="visible-lg box vcenter">
+            <h1 id="lg">The page you are looking for does not exist. <br>Just like your love life.</h1>
+                </div>
+            </div>
+            <div class = "col-lg-12">
+                <img src = "http://i1203.photobucket.com/albums/bb386/Marlinfan1995/burn_zps28a042ca.jpg" class = "img-responsive center-block">
+            </div>
+            <div class= "col-lg-12">
+                <div class="visible-xs vcenter redirectbox" id = "boxxs">
+                     <h2 id="xs">Automatically redirected in 8s, click on logo to return to homepage.</h2>
+                </div>
+                <div class="visible-sm vcenter redirectbox" id = "boxsm">
+                    <h2 id="sm">Automatically redirected in 8s, click on logo to return to homepage.</h2>
+                </div>
+                <div class="visible-md vcenter redirectbox" id = "boxmd">
+                    <h2 id="md">Automatically redirected in 8s, click on logo to return to homepage.</h2>
+                </div>
+                <div class="visible-lg vcenter redirectbox" id = "boxlg">
+                    <h3 id="redirectlg">Automatically redirected in 8s, click on logo to return to homepage.</h2>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

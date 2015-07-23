@@ -31,3 +31,6 @@ def search(request):
             return render(request, 'search.html', { 'data': message, 'destination': destination, 'currency': money })
     else:
         return redirect('/')
+
+def custom404(request):
+    return render(request, '404.html')
