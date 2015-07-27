@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href= "{% static "css/bootstrap.min.css" %}">
         <link rel="stylesheet" href= "{% static "css/searched.css" %}">
-        <link rel="stylesheet" href= "{% static "css/app.css" %}">
         <script src= "{% static "js/jquery-1.11.3.min.js" %}"></script>
-        <script src= "{% static "js/app.js" %}"></script>
         <script src= "{% static "js/bootstrap.min.js" %}"></script>
+        <script src = "{% static "js/velocity.min.js" %}"></script>
+        <script src = "{% static "js/velocity.ui.js" %}"></script>
         <!-- EXCHANGE RATE SCRIPT -->
         <script type="text/javascript">
         function getRate(from, to) {
@@ -56,8 +56,31 @@
         <div class="row">
         {% for messages in data %}
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 extra">
-                {% for message in messages %}
-                    <p>{{ message }}</p>
+                {% for thing in messages %}
+                    {% if forloop.counter0 == 0 %}
+                        <p>{{ thing }}</p>
+                    {% endif %}
+
+                    {% if forloop.counter0 == 1 %}
+                        <h2> Tax : {{ thing.tax }}<br>
+                            Fare: {{thing.fare }}
+                        </h2>
+                    {% endif %}
+
+                    {% if forloop.counter0 == 2 %}
+                        {% for details in thing %}
+                            {% for key, stuff in details.items %}
+                                 <h5> Departure: {{ stuff.departure }} GMT{{ stuff.departureTZ }}<br>
+                                     Arrival: {{ stuff.arrival }} GMT{{ stuff.arrivalTZ }} <br>
+                                     Carrier: {{ stuff.carrier_name }} <br>
+                                     Flight: {{ stuff.carrier }} {{ stuff.carrier_num }}<br>
+                                     Arrival Airport: {{ stuff.dest_airport }} <br>
+                                     Destination: {{ stuff.dest_name }}
+                                 </h5>
+                            {% endfor %}
+                        {% endfor %}
+                    {% endif %}
+
                 {% endfor %}
             </div>
         {% endfor %}
@@ -66,4 +89,5 @@
         <p>"No results received"</p>
         {% endif %}
 </body>
+    <script src = "{% static "js/searched.js" %}"></script>
 </html>
