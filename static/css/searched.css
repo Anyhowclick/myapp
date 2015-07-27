@@ -3,7 +3,15 @@ body{
     min-height:100%;
     background: url('../images/relaxing_evening_beach-1577034.jpg') no-repeat center center fixed;
     background-color: rgba(0, 0, 0, 0.3);
-    background-size:cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+img {
+    /* image auto scaling */
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 body.BKK{
@@ -199,25 +207,75 @@ body.ILO{
 }
 
 p{
-    padding: 50px;
-    font-size: 32px;
+    margin-top: 150px;
+    font-size: 2vw;
+    color: white;
     font-weight: bold;
     text-align: center;
-    background: #f2f2f2;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .rate {
+    width: 100%;
     position: fixed;
-    top: 0;
-    right: 0;
+    z-index: 5;
     font-family: 'Open Sans', 'Helvetica', sans-serif;
     font-weight: 400;
+    font-size: 2.5vw;
     vertical-align: baseline;
-    background-color:rgba(255,255,255,0.7);
+    background-color:rgba(245,245,255,0.9);
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 #rate {
     color: orangered;
     font-weight: 600;
     font-size: 150%;
+    font-size: 4.5vw;
+}
+
+#rate2 {
+    color: orangered;
+    font-weight: 600;
+    font-size: 200%;
+    font-size: 5vw;
+}
+
+.ratexs {
+    z-index: 7;
+    width: 105%;
+    position: fixed;
+    vertical-align: text-top;
+    background-color:rgba(245,245,255,0.9);
+}
+
+.xs {
+    padding: 0.5vw;
+    text-align: right;
+    width: 100%;
+    z-index: 7;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-weight: 400;
+    font-size: 3.5vw;
+}
+
+.extra {
+    column-break-inside: avoid;
+    display: inline-block;
+}
+
+
+@media (max-width:959px) {
+    p{
+        font-size: 5vw;
+    }
+    .rate {
+        font-size: 5vw;
+    }
+    #rate {
+        font-size: 8vw;
+    }
 }
