@@ -58,25 +58,35 @@
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 extra">
                 {% for thing in messages %}
                     {% if forloop.counter0 == 0 %}
-                        <p>{{ thing }}</p>
+                        <p><span id="currency"><sup>{{ thing|slice:":3" }}</sup></span>{{ thing|slice:"3:" }}</p>
                     {% endif %}
 
                     {% if forloop.counter0 == 1 %}
-                        <h2> Tax : {{ thing.tax }}<br>
-                            Fare: {{thing.fare }}
-                        </h2>
+                        <h3> <span id="title">Fare:</span> <span id="currency"> <sup>{{ thing.fare|slice:":3" }}</sup></span>{{ thing.fare|slice:"3:" }}<br>
+                             <span id="title">Tax :</span> <span id="currency"> <sup> {{ thing.tax|slice:":3" }} </span></sup>{{ thing.tax|slice:"3:" }}
+                        </h3>
                     {% endif %}
 
                     {% if forloop.counter0 == 2 %}
                         {% for details in thing %}
                             {% for key, stuff in details.items %}
-                                 <h5> Departure: {{ stuff.departure }} GMT{{ stuff.departureTZ }}<br>
-                                     Arrival: {{ stuff.arrival }} GMT{{ stuff.arrivalTZ }} <br>
-                                     Carrier: {{ stuff.carrier_name }} <br>
-                                     Flight: {{ stuff.carrier }} {{ stuff.carrier_num }}<br>
-                                     Arrival Airport: {{ stuff.dest_airport }} <br>
-                                     Destination: {{ stuff.dest_name }}
-                                 </h5>
+                                {% if key|divisibleby:"2" %}
+                                    <h5> <span id="des">Departure: </span>{{ stuff.departure|date:"D d F" }}  |  <span id="des">{{stuff.departure|date:"g.i a"}}</span>  |  GMT{{ stuff.departureTZ }}<br>
+                                        <span id="des">Arrival: </span>{{ stuff.arrival|date:"D d F" }}  |  <span id="des">{{stuff.arrival|date:"g.i a"}}</span>  |  GMT{{ stuff.arrivalTZ }}<br>
+                                        <span id="des">Carrier: </span>{{ stuff.carrier_name }}<br>
+                                        <span id="des">Flight: </span>{{ stuff.carrier }} {{ stuff.carrier_num }}<br>
+                                        <span id="des">Arrival Airport </span>{{ stuff.dest_airport }}<br>
+                                        <span id="des">Destination: </span>{{ stuff.dest_name }}
+                                    </h5>
+                                {% else %}
+                                    <h4> <span id="des">Departure: </span>{{ stuff.departure|date:"D d F" }}  |  <span id="des">{{stuff.departure|date:"g.i a"}}</span>  |  GMT{{ stuff.departureTZ }}<br>
+                                     <span id="des">Arrival: </span>{{ stuff.arrival|date:"D d F" }}  |  <span id="des">{{stuff.arrival|date:"g.i a"}}</span>  |  GMT{{ stuff.arrivalTZ }}<br>
+                                     <span id="des">Carrier: </span>{{ stuff.carrier_name }}<br>
+                                     <span id="des">Flight: </span>{{ stuff.carrier }} {{ stuff.carrier_num }}<br>
+                                     <span id="des">Arrival Airport </span>{{ stuff.dest_airport }}<br>
+                                     <span id="des">Destination: </span>{{ stuff.dest_name }}
+                                 </h4>
+                                {% endif %}
                             {% endfor %}
                         {% endfor %}
                     {% endif %}

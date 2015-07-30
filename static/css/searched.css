@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600,800|Khula:400,800,700,300);
 body{
     /* Workaround for some mobile browsers */
     min-height:100%;
@@ -207,12 +208,14 @@ body.ILO{
 }
 
 p{
-    margin-top: 150px;
-    font-size: 2vw;
-    color: white;
-    font-weight: bold;
+    margin-top: 120px;
+    margin-bottom: 0px;
+    font-family: 'Khula', Helvetica;
+    font-size: 3vw;
+    color: #F5F1F7;
+    font-weight: 800;
     text-align: center;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(119,159,222,0.7);
 }
 
 .rate {
@@ -223,25 +226,11 @@ p{
     font-weight: 400;
     font-size: 2.5vw;
     vertical-align: baseline;
-    background-color:rgba(245,245,255,0.9);
+    color: #29597F;
+    background-color:rgba(206,218,250,0.9);
     text-align: right;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-#rate {
-    color: orangered;
-    font-weight: 600;
-    font-size: 150%;
-    font-size: 4.5vw;
-}
-
-#rate2 {
-    color: orangered;
-    font-weight: 600;
-    font-size: 200%;
-    font-size: 5vw;
 }
 
 .ratexs {
@@ -249,10 +238,25 @@ p{
     width: 105%;
     position: fixed;
     vertical-align: text-top;
-    background-color:rgba(245,245,255,0.9);
+    background-color:rgba(206,218,250,0.9);
+}
+
+#rate {
+    color: #FF8100;
+    font-weight: 600;
+    font-size: 150%;
+    font-size: 4.5vw;
+}
+
+#rate2 {
+    color: #FF8100;
+    font-weight: 600;
+    font-size: 200%;
+    font-size: 5vw;
 }
 
 .xs {
+    color: #29597F;;
     padding: 0.5vw;
     text-align: right;
     width: 100%;
@@ -268,6 +272,48 @@ p{
 }
 
 
+h3, h5 {
+    font-family: 'Khula', 'Helvetica';
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: #5BA2FF;
+    text-align: left;
+    background-color: rgba(0,92,163,0.8);
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+h3 {
+    font-size:2.5vw;
+    color: #42CEFF;
+    background-color: rgba(0,126,242,0.8);
+    margin-bottom: 0px;
+}
+
+h4 {
+    font-family: 'Khula', 'Helvetica';
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: #5BA2FF;
+    text-align: left;
+    background-color: rgba(34,83,120,0.8);
+    margin: 0px;
+    padding: 5px;
+}
+#des {
+    color: #62F3FF;
+}
+
+#title {
+    font-weight: 600;
+    color:#3BFFFB;
+}
+
+#currency {
+    font-size: 70%;
+    font-weight: 300;
+}
 @media (max-width:959px) {
     p{
         font-size: 5vw;
@@ -277,5 +323,11 @@ p{
     }
     #rate {
         font-size: 8vw;
+    }
+    h3{
+        font-size: 4vw;
+    }
+    h4,h5 {
+        font-size: 4vw;
     }
 }
